@@ -22,7 +22,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Buid e push da imagem
+      - name: Build e push da imagem
         uses: docker/build-push-action@v3
         with:
           context: .
